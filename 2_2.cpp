@@ -22,7 +22,7 @@ int main()
         cout << "*"<<endl;
     }
     cout<<endl;
-    cout << "wypelniony gwiazdkami prostokat " << endl;
+    cout << "wypelniony gwiazdkami prostokat o wymiarach a na b " << endl;
     for (int i = 0; i < b; i++){
         for (int j = 0; j < a; j++) {
             cout << "*";
@@ -30,5 +30,17 @@ int main()
         cout << endl;
     }
     cout << endl;
+    cout << "obwod gwiazdkami prostokata o wymiarach a na b " << endl;
+    for (int i = 0; i < b; i++) {
+        for (int j = 0; j < a; j++) {
+            if (i == 0 || i == b - 1 || j == 0 || j == a - 1) {
+                cout << "*";
+            }
+            else {
+                cout << " ";
+            }
+        }
+        cout << endl;
+    }
     return 0;
 }
